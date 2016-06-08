@@ -26,6 +26,9 @@ class ViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDataSour
             print("音楽ファイルが読み込めませんでした")
         }
         
+        clapPickerView.delegate = self
+        clapPickerView.dataSource = self
+        
     }
         // Do any additional setup after loading the view, typically from a nib.
 
